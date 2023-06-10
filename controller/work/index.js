@@ -13,6 +13,7 @@ async function work(req, res) {
 
     try {
         const rootDir = path.dirname(require?.main?.filename);
+        console.log("suraj",req.body)
 
         // thumbnail 
         const thumbnail_file_name = convertToSlug(heading)
