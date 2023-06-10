@@ -35,6 +35,7 @@ async function work(req, res) {
         })
 
         const resData = await dataModale.save()
+        console.log("suraj",resData)
         if (!resData) {
             throw new Error("Recent Work Not saved")
         }
