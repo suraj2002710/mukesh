@@ -11,6 +11,8 @@ async function case_studie_draf(req, res) {
                 data: []
             })
         } else {
+                        console.log("suraj",isData)
+
             res.status(200).json({
                 message: "data found",
                 status: true,
