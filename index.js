@@ -12,11 +12,7 @@ app.use(exress.urlencoded({ extended: true }))
 app.use(exress.json())
 app.use(cors(
     {
-        origin: [
-            'http://localhost:3001/',
-            'http://localhost:3000/',
-            'https://socket-client.onrender.com/',
-                ]
+        origin:'*'
     }
 ))
 app.set('views','views')
